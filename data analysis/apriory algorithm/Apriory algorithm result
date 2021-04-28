@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     corona-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    327
+Attributes:   24
+              Date
+              Total
+              China
+              Hong Kong
+              Macau
+              Taipei
+              Japan
+              South Korea
+              Viet Nam
+              Singapore
+              Australia
+              Malaysia
+              Cambodia
+              Philippines
+              Thailand
+              Nepal
+              Sri Lanka
+              India
+              USA
+              Canada
+              France
+              Finland
+              Germany
+              UAE
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (33 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 5
+
+Size of set of large itemsets L(2): 6
+
+Size of set of large itemsets L(3): 4
+
+Size of set of large itemsets L(4): 1
+
+Best rules found:
+
+ 1. Sri Lanka=1 44 ==> Hong Kong=0 44    <conf:(1)> lift:(6.81) lev:(0.11) [37] conv:(37.54)
+ 2. Sri Lanka=1 44 ==> Nepal=1 44    <conf:(1)> lift:(5.64) lev:(0.11) [36] conv:(36.2)
+ 3. Nepal=1 Sri Lanka=1 44 ==> Hong Kong=0 44    <conf:(1)> lift:(6.81) lev:(0.11) [37] conv:(37.54)
+ 4. Hong Kong=0 Sri Lanka=1 44 ==> Nepal=1 44    <conf:(1)> lift:(5.64) lev:(0.11) [36] conv:(36.2)
+ 5. Sri Lanka=1 44 ==> Hong Kong=0 Nepal=1 44    <conf:(1)> lift:(7.11) lev:(0.12) [37] conv:(37.81)
+ 6. Cambodia=1 41 ==> Hong Kong=0 41    <conf:(1)> lift:(6.81) lev:(0.11) [34] conv:(34.98)
+ 7. Cambodia=1 41 ==> Nepal=1 41    <conf:(1)> lift:(5.64) lev:(0.1) [33] conv:(33.73)
+ 8. Cambodia=1 41 ==> Sri Lanka=1 41    <conf:(1)> lift:(7.43) lev:(0.11) [35] conv:(35.48)
+ 9. Cambodia=1 Nepal=1 41 ==> Hong Kong=0 41    <conf:(1)> lift:(6.81) lev:(0.11) [34] conv:(34.98)
+10. Hong Kong=0 Cambodia=1 41 ==> Nepal=1 41    <conf:(1)> lift:(5.64) lev:(0.1) [33] conv:(33.73)
+

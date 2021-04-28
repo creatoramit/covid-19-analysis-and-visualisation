@@ -1,0 +1,91 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     corona
+Instances:    327
+Attributes:   24
+              Date
+              Total
+              China
+              Hong Kong
+              Macau
+              Taipei
+              Japan
+              South Korea
+              Viet Nam
+              Singapore
+              Australia
+              Malaysia
+              Cambodia
+              Philippines
+              Thailand
+              Nepal
+              Sri Lanka
+              India
+              USA
+              Canada
+              France
+              Finland
+              Germany
+              UAE
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 5
+Within cluster sum of squared errors: 545.0657140185355
+
+Initial starting points (random):
+
+Cluster 0: 30-06-20,4035916,84785,19558,8639,447,18615,12850,355,43907,7920,8639,141,37514,3171,13564,2047,585481,2628824,106097,202063,7214,195418,48667
+Cluster 1: 17-06-20,3290785,84458,10299,8515,445,17530,12257,335,41216,7391,8515,128,27238,3135,7177,1924,366946,2157267,101491,195433,7117,188604,43364
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                 Cluster#
+Attribute         Full Data             0             1
+                    (327.0)       (131.0)       (196.0)
+=======================================================
+Date               23-01-20      06-08-20      23-01-20
+Total          8517988.9083 18081779.1069  2125863.8265
+China             82083.052    91003.2061    76121.1122
+Hong Kong        37938.3394    82391.8855     8227.0408
+Macau            14144.5168    27996.4427     4886.3418
+Taipei             403.8073      551.2214      305.2806
+Japan            45648.0581    96461.7863    11685.8214
+South Korea        15607.37    25395.2672     9065.4592
+Viet Nam           596.4924     1138.5802      234.1786
+Singapore        35182.5657    57477.0763    20281.6429
+Australia        14100.9572    26644.4656     5717.2857
+Malaysia         14144.5168    27996.4427     4886.3418
+Cambodia           174.9419      290.0458       98.0102
+Philippines     139598.9358    318992.626     19698.051
+Thailand          2682.7798     3671.2748      2022.102
+Nepal            51666.8807    122375.771     4407.3673
+Sri Lanka         4511.9908     9795.1756      980.8827
+India          2789871.9358  6531888.0916   288830.5255
+USA            4304449.4618   8718664.313  1354132.3929
+Canada          120035.1651   220053.8626    53185.9337
+France          502864.5382  1077887.1145   118538.2245
+Finland           8089.4281    14236.9924     3980.5969
+Germany          276391.685   514682.9389   117125.5918
+UAE              57801.4893   112184.5267    21453.6429
+
+
+
+
+Time taken to build model (full training data) : 0.05 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      131 ( 40%)
+1      196 ( 60%)
+
